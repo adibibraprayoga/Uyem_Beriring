@@ -615,6 +615,9 @@
             });
         });
         
+        // Ensure the first tab content is visible on page load
+        document.querySelector('.tab-content.active').style.display = 'block';
+
         // Image slider
         let slideIndex = 1;
         showSlides(slideIndex);
