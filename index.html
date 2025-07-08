@@ -587,7 +587,13 @@
         // Tab functionality
         const tabButtons = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
-        
+
+        // Remove 'active' class from all tab contents on page load
+        tabContents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Add event listener to tab buttons
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const tabId = button.getAttribute('data-tab');
