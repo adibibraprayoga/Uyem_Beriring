@@ -353,8 +353,18 @@
                             <li><span class="font-medium">Agrowisata</span>: Kebun buah dan sayur organik dengan konsep petik sendiri</li>
                         </ul>
                     </div>
-                    <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1500382018108-84409bbf8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wisata Desa Uyem" class="w-full h-64 object-cover rounded-lg">
+                    <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
+                        <div class="slide active">
+                            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pemandangan Desa Uyem Beriring" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1500382018108-84409bbf8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kegiatan Desa" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Potensi Desa" class="w-full h-full object-cover">
+                        </div>
+                        <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
+                        <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
                     </div>
                 </div>
             </div>
@@ -368,7 +378,6 @@
                 <h3 class="text-2xl font-semibold text-green-700 mb-4">Album Foto</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="img/pertanian1.jpg" alt="Potensi Pertanian" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <h4 class="font-bold text-green-800 mb-2">Potensi Pertanian</h4>
                             <p class="text-gray-600 text-sm">Kumpulan foto hasil pertanian Desa Uyem</p>
