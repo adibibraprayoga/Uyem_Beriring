@@ -301,7 +301,7 @@
                     <div>
                         <h3 class="text-2xl font-semibold text-green-700 mb-4">Peta Desa Uyem</h3>
                         <div class="map-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63675.5590815805!2d97.092047!3d4.07685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30390a80322da881%3A0xb33e884e418b2de5!2sUyem%20Beriring%2C%20Kec.%20Tripe%20Jaya%2C%20Kabupaten%20Gayo%20Lues%2C%20Aceh!5e0!3m2!1sid!2sid!4v1750305875427!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                         </div>
                     </div>
                 </div>
@@ -325,8 +325,18 @@
                             <li><span class="font-medium">Perkebunan</span>: Teh dan kopi di lahan perbukitan seluas 20 hektar</li>
                         </ul>
                     </div>
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pertanian Desa Uyem" class="w-full h-64 object-cover rounded-lg">
+                    <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
+                        <div class="slide active">
+                            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pemandangan Desa Uyem Beriring" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1500382018108-84409bbf8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kegiatan Desa" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Potensi Desa" class="w-full h-full object-cover">
+                        </div>
+                        <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
+                        <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
                     </div>
                 </div>
             </div>
@@ -362,27 +372,8 @@
                         <div class="p-4">
                             <h4 class="font-bold text-green-800 mb-2">Potensi Pertanian</h4>
                             <p class="text-gray-600 text-sm">Kumpulan foto hasil pertanian Desa Uyem</p>
-                            <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
-                                <div class="slide active">
-                                    <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pemandangan Desa Uyem Beriring" class="w-full h-full object-cover">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://images.unsplash.com/photo-1500382018108-84409bbf8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kegiatan Desa" class="w-full h-full object-cover">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Potensi Desa" class="w-full h-full object-cover">
-                                </div>
-                                <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
-                                <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="img/kegiatan1.jpg" alt="Kegiatan Desa" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h4 class="font-bold text-green-800 mb-2">Kegiatan Desa</h4>
-                            <p class="text-gray-600 text-sm">Dokumentasi berbagai kegiatan di Desa Uyem</p>
                             <div class="mt-3 flex justify-between items-center">
+                                
                                 <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
                                     <div class="slide active">
                                         <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pemandangan Desa Uyem Beriring" class="w-full h-full object-cover">
@@ -396,25 +387,7 @@
                                     <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
                                     <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
                                 </div>
-                        </div>
-                    </div>
-                    <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="img/wisata1.jpg" alt="Wisata Alam" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h4 class="font-bold text-green-800 mb-2">Wisata Alam</h4>
-                            <p class="text-gray-600 text-sm">Keindahan alam Desa Uyem</p>
-                            <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
-                                <div class="slide active">
-                                    <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pemandangan Desa Uyem Beriring" class="w-full h-full object-cover">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://images.unsplash.com/photo-1500382018108-84409bbf8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kegiatan Desa" class="w-full h-full object-cover">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Potensi Desa" class="w-full h-full object-cover">
-                                </div>
-                                <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
-                                <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
+
                             </div>
                         </div>
                     </div>
