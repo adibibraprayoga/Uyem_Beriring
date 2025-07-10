@@ -340,35 +340,7 @@
                         <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
                     </div>
                 </div>
-            </div>
-            
-            <div>
-                <h3 class="text-2xl font-semibold text-green-700 mb-4">Potensi Wisata</h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="order-2 md:order-1">
-                        <p class="text-gray-700 mb-4">Selain pertanian, Desa Uyem juga memiliki potensi wisata alam yang cukup menjanjikan:</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li><span class="font-medium">Curug Uyem</span>: Air terjun setinggi 15 meter dengan pemandangan yang indah</li>
-                            <li><span class="font-medium">Perkebunan Teh</span>: Hamparan kebun teh yang luas dengan udara sejuk</li>
-                            <li><span class="font-medium">Kampung Adat</span>: Permukiman tradisional dengan arsitektur Sunda kuno</li>
-                            <li><span class="font-medium">Agrowisata</span>: Kebun buah dan sayur organik dengan konsep petik sendiri</li>
-                        </ul>
-                    </div>
-                    <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
-                        <div class="slide active">
-                            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pemandangan Desa Uyem Beriring" class="w-full h-full object-cover">
-                        </div>
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1500382018108-84409bbf8c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kegiatan Desa" class="w-full h-full object-cover">
-                        </div>
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Potensi Desa" class="w-full h-full object-cover">
-                        </div>
-                        <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
-                        <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
         <!-- Gallery Section -->
@@ -591,10 +563,8 @@
         const tabButtons = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
 
-        // Remove 'active' class from all tab contents on page load
-        tabContents.forEach(content => {
-            content.classList.remove('active');
-        });
+        // Ensure the first tab content (history) is visible on page load
+        document.getElementById('history').classList.add('active');
 
         // Add event listener to tab buttons
         tabButtons.forEach(button => {
