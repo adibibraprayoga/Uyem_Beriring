@@ -116,39 +116,33 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
         <!-- About Section -->
-        <section class="mb-16">
+        <section class="about-section mb-16">
             <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Tentang Desa Uyem Beriring</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-                <p class="text-gray-700 mb-4">Desa Uyem Beriring adalah sebuah desa yang terletak di Kecamatan Tripe Jaya, Kabupaten Gayo Lues. Desa ini dikenal dengan keindahan alamnya yang masih asri dan masyarakatnya yang ramah.</p>
-                <p class="text-gray-700 mb-4">Mayoritas penduduk Desa Uyem Beriring bekerja sebagai petani. Desa ini memiliki potensi pertanian yang besar dengan hasil utama berupa cabai, kemiri, tembakau dan ..... .</p>
-                <p class="text-gray-700">Dengan semangat gotong royong yang tinggi, masyarakat Desa Uyem Beriring terus berupaya membangun desanya menjadi lebih maju dan sejahtera.</p>
-            </div>
-            <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
-                <div class="slide active">
-                <img src="img/asset/slider1/1.jpg" alt="Pemandangan Desa Uyem Beriring 1" class="w-full h-full object-cover object-center">
+                <div>
+                    <p class="text-gray-700 mb-4">Desa Uyem Beriring adalah sebuah desa yang terletak di Kecamatan Tripe Jaya, Kabupaten Gayo Lues. Desa ini dikenal dengan keindahan alamnya yang masih asri dan masyarakatnya yang ramah.</p>
+                    <p class="text-gray-700 mb-4">Mayoritas penduduk Desa Uyem Beriring bekerja sebagai petani. Desa ini memiliki potensi pertanian yang besar dengan hasil utama berupa cabai, kemiri, tembakau, dan lainnya.</p>
+                    <p class="text-gray-700">Dengan semangat gotong royong yang tinggi, masyarakat Desa Uyem Beriring terus berupaya membangun desanya menjadi lebih maju dan sejahtera.</p>
                 </div>
-                <div class="slide">
-                <img src="img/asset/slider1/2.jpg" alt="Pemandangan Desa Uyem Beriring 2" class="w-full h-full object-cover object-center">
+                <div class="slider relative bg-gray-200 rounded-lg overflow-hidden">
+                    <div class="slide active">
+                        <img src="img/asset/slider1/1.jpg" alt="Pemandangan Desa Uyem Beriring 1" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="slide">
+                        <img src="img/asset/slider1/2.jpg" alt="Pemandangan Desa Uyem Beriring 2" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="slide">
+                        <img src="img/asset/slider1/3.jpg" alt="Pemandangan Desa Uyem Beriring 3" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="slide">
+                        <img src="img/asset/slider1/4.jpg" alt="Pemandangan Desa Uyem Beriring 4" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="slide">
+                        <img src="img/asset/slider1/5.jpg" alt="Pemandangan Desa Uyem Beriring 5" class="w-full h-full object-cover object-center">
+                    </div>
+                    <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusAboutSlides(-1)">❮</button>
+                    <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusAboutSlides(1)">❯</button>
                 </div>
-                <div class="slide">
-                <img src="img/asset/slider1/3.jpg" alt="Pemandangan Desa Uyem Beriring 3" class="w-full h-full object-cover object-center">
-                </div>
-                <div class="slide">
-                <img src="img/asset/slider1/4.jpg" alt="Pemandangan Desa Uyem Beriring 4" class="w-full h-full object-cover object-center">
-                </div>
-                <div class="slide">
-                <img src="img/asset/slider1/5.jpg" alt="Pemandangan Desa Uyem Beriring 5" class="w-full h-full object-cover object-center">
-                </div>
-                <div class="slide">
-                <img src="img/asset/slider1/6.jpg" alt="Pemandangan Desa Uyem Beriring 6" class="w-full h-full object-cover object-center">
-                </div>
-                <div class="slide">
-                <img src="img/asset/slider1/7.jpg" alt="Pemandangan Desa Uyem Beriring 7" class="w-full h-full object-cover object-center">
-                </div>
-                <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(-1)">❮</button>
-                <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70" onclick="plusSlides(1)">❯</button>
-            </div>
             </div>
         </section>
 
@@ -584,6 +578,29 @@
         // Auto slide change every 5 seconds
         setInterval(() => {
             plusSlides(1);
+        }, 5000);
+
+        // Image slider for About Section
+        let aboutSlideIndex = 1;
+        showAboutSlides(aboutSlideIndex);
+
+        function plusAboutSlides(n) {
+            showAboutSlides(aboutSlideIndex += n);
+        }
+
+        function showAboutSlides(n) {
+            let aboutSlides = document.querySelectorAll('.about-section .slide');
+            if (n > aboutSlides.length) { aboutSlideIndex = 1 }
+            if (n < 1) { aboutSlideIndex = aboutSlides.length }
+            for (let i = 0; i < aboutSlides.length; i++) {
+                aboutSlides[i].classList.remove("active");
+            }
+            aboutSlides[aboutSlideIndex - 1].classList.add("active");
+        }
+
+        // Auto slide change every 5 seconds for About Section
+        setInterval(() => {
+            plusAboutSlides(1);
         }, 5000);
     </script>
 </body>
